@@ -1,7 +1,5 @@
 # Linux Handbook
 
-## Description
-
 This handbook serves as a comprehensive guide to understanding and using Linux commands effectively. It covers basic, advanced, and administrative commands, along with examples and outputs, to help users navigate and manage Linux systems efficiently.
 
 ---
