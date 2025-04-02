@@ -286,34 +286,14 @@ Some commands may not require options or arguments.
     - **Example**: `sudo su`
     - **Output**: Grants root access.
 
-4. **`apt`** - Manages software packages.
-
-    **Examples:**
-
-    - **Update package index:**
-        ```sh
-        sudo apt update
-        ```
-    - **Upgrade all installed packages:**
-        ```sh
-        sudo apt upgrade
-        ```
-    - **Install a package:**
-        ```sh
-        sudo apt install packageName
-        ```
-    - **Remove a package:**
-        ```sh
-        sudo apt remove packageName
-        ```
-    - **Purge a package (remove along with configuration files):**
-        ```sh
-        sudo apt purge packageName
-        ```
-    - **Remove unnecessary dependencies:**
-        ```sh
-        sudo apt autoremove
-        ```
+4. **`apt`**: Manages software packages.
+    - **Examples**:
+      - `sudo apt update`: Updates the package index.
+      - `sudo apt upgrade`: Upgrades all installed packages.
+      - `sudo apt install packageName`: Installs the specified package.
+      - `sudo apt remove packageName`: Removes the specified package.
+      - `sudo apt purge packageName`: Removes the package and its configuration files.
+      - `sudo apt autoremove`: Removes unnecessary dependencies.
 
  </details>
 
