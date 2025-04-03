@@ -127,8 +127,6 @@ Some commands may not require options or arguments.
 17. **`printf`**: Prints formatted text to the terminal. - **Example**: `printf "This is a ball.\n"` - **Output**: `This is a ball.`
 </details>
 
----
-
 <details>
 <summary><h4><strong>2. Advanced Commands</strong></h4></summary>
 
@@ -266,8 +264,6 @@ Some commands may not require options or arguments.
 
     </details>
 
----
-
 <details>
 <summary><h4><strong>3. Administrative Commands</strong></h4></summary>
 
@@ -296,6 +292,135 @@ Some commands may not require options or arguments.
       - `sudo apt autoremove`: Removes unnecessary dependencies.
 
  </details>
+
+<details>
+<summary><h4><strong>4. Networking Commands</strong></h4></summary>
+
+1. **`ping`**: Tests the reachability of a host on a network.
+   - **Example**: `ping google.com`
+   - **Output**:
+     ```
+     PING google.com (142.250.190.78): 56 data bytes
+     64 bytes from 142.250.190.78: icmp_seq=0 ttl=118 time=14.2 ms
+     ```
+   - **Explanation**: Sends ICMP echo requests to the specified host and measures the response time.
+
+2. **`ifconfig`**: Displays or configures network interfaces.
+   - **Example**: `ifconfig`
+   - **Output**:
+     ```
+     eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+           inet 192.168.1.10  netmask 255.255.255.0  broadcast 192.168.1.255
+     ```
+   - **Explanation**: Shows details about the network interfaces, such as IP address and netmask.
+
+3. **`netstat`**: Displays network connections, routing tables, and interface statistics.
+   - **Example**: `netstat -tuln`
+   - **Output**:
+     ```
+     Proto Recv-Q Send-Q Local Address           Foreign Address         State
+     tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN
+     udp        0      0 0.0.0.0:68              0.0.0.0:*
+     ```
+   - **Explanation**: Lists active network connections and listening ports.
+
+4. **`curl`**: Transfers data from or to a server using various protocols.
+   - **Example**: `curl http://example.com`
+   - **Output**: Displays the HTML content of the specified URL.
+
+5. **`wget`**: Downloads files from the web.
+   - **Example**: `wget http://example.com/file.zip`
+   - **Output**: Downloads `file.zip` to the current directory.
+
+</details>
+
+<details>
+<summary><h4><strong>5. Disk and Filesystem Management</strong></h4></summary>
+
+1. **`df`**: Displays disk space usage.
+   - **Example**: `df -h`
+   - **Output**:
+     ```
+     Filesystem      Size  Used Avail Use% Mounted on
+     /dev/sda1        50G   20G   30G  40% /
+     ```
+   - **Explanation**: Shows the available and used disk space in a human-readable format.
+
+2. **`du`**: Displays disk usage of files and directories.
+   - **Example**: `du -sh /home/user`
+   - **Output**:
+     ```
+     1.2G    /home/user
+     ```
+   - **Explanation**: Shows the total size of the specified directory.
+
+3. **`mount`**: Mounts a filesystem.
+   - **Example**: `mount /dev/sdb1 /mnt`
+   - **Output**: Mounts the device `/dev/sdb1` to the `/mnt` directory.
+
+4. **`umount`**: Unmounts a filesystem.
+   - **Example**: `umount /mnt`
+   - **Output**: Unmounts the filesystem mounted at `/mnt`.
+
+5. **`fdisk`**: Partition management tool.
+   - **Example**: `fdisk /dev/sda`
+   - **Output**: Opens an interactive session to manage partitions on `/dev/sda`.
+
+</details>
+
+<details>
+<summary><h4><strong>6. Archiving and Compression</strong></h4></summary>
+
+1. **`tar`**: Archives files into a single file.
+   - **Example**: `tar -cvf archive.tar file1 file2`
+   - **Output**: Creates an archive named `archive.tar` containing `file1` and `file2`.
+
+2. **`gzip`**: Compresses files.
+   - **Example**: `gzip file.txt`
+   - **Output**: Compresses `file.txt` into `file.txt.gz`.
+
+3. **`zip`**: Compresses files into a zip archive.
+   - **Example**: `zip archive.zip file1 file2`
+   - **Output**: Creates a zip archive named `archive.zip` containing `file1` and `file2`.
+
+4. **`unzip`**: Extracts files from a zip archive.
+   - **Example**: `unzip archive.zip`
+   - **Output**: Extracts the contents of `archive.zip` into the current directory.
+
+</details>
+
+<details>
+<summary><h4><strong>7. System Monitoring</strong></h4></summary>
+
+1. **`uptime`**: Displays system uptime and load average.
+   - **Example**: `uptime`
+   - **Output**:
+     ```
+     10:00:00 up 5 days,  3:42,  2 users,  load average: 0.00, 0.01, 0.05
+     ```
+   - **Explanation**: Shows how long the system has been running and the average system load.
+
+2. **`free`**: Displays memory usage.
+   - **Example**: `free -h`
+   - **Output**:
+     ```
+                   total        used        free      shared  buff/cache   available
+     Mem:           8.0G        2.5G        4.0G        500M        1.5G        5.0G
+     Swap:          2.0G        0.5G        1.5G
+     ```
+   - **Explanation**: Shows the total, used, and available memory in a human-readable format.
+
+3. **`vmstat`**: Displays system performance statistics.
+   - **Example**: `vmstat 1`
+   - **Output**:
+     ```
+     procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+      r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+      1  0      0  4000M  1000M  2000M    0    0     0     0  100  200  5  1 94  0  0
+     ```
+   - **Explanation**: Provides real-time statistics on CPU, memory, and I/O usage.
+
+</details>
 
 </details>
 
