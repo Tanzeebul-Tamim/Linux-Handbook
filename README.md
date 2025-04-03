@@ -119,6 +119,8 @@ Some commands may not require options or arguments.
         3  pwd
         ```
 
+    > **⚠️ Caution**: Avoid entering sensitive information, such as passwords, directly into the terminal. Commands entered in the terminal are saved in the history file, which could be accessed by others with sufficient permissions, posing a security risk.
+
 16. **`echo`**: Prints text to the terminal.
 
     - **Example**: `echo Hello`
